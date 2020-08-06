@@ -1,4 +1,31 @@
 @extends('layouts.main')
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Gallery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="#" >Register</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/gallery/create" >Create Gallery</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
 @section('content')
 
 <section class="page-section bg-light" id="portfolio">
@@ -10,6 +37,7 @@
         
         <div class="row">
             @foreach($galleries as $gallery)
+          
             
             <div class="col-lg-4 col-sm-6 mb-4">
                
@@ -26,12 +54,13 @@
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{{$gallery->name}}</div>
                         <div class="portfolio-caption-subheading text-muted">{{$gallery->description}}</div>
-                        <a class="btn btn-primary" href="Template/images/calander.png" role="button">See more</a>
+                        <a class="btn btn-primary" href="/gallery/show/{{$gallery->id}}" role="button">See more</a>
                     </div>
                 </div>
                
             </div>
             @endforeach 
+           
         </div>
               
             

@@ -3,11 +3,11 @@
 <div class="callout primary">
     <div class="row column">
         <h1>Create gallery</h1>
-        <p class="lead"Create a neew gallery and start uploading></p>
+        <p class="lead">Create a neew gallery and start uploading</p>
     </div>
 </div>
 <div class="row small-up-2 medium-up-3 large-up-4">
-    <div class="main">
+    <div class="form-group row">
 
         {!!Form::open(array('action'=>'GalleryController@store','enctype'=>'multipart/form-data')) !!}
         {!!Form::label('name','Name') !!}

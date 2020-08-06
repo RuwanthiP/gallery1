@@ -7,7 +7,7 @@
     </div>
 </div>
 <div class="row small-up-2 medium-up-3 large-up-4">
-    <div class="main">
+    <div class="form-group">
 
         {!!Form::open(array('action'=>'PhotoController@store','enctype'=>'multipart/form-data')) !!}
         {!!Form::label('title','Title') !!}
