@@ -4,12 +4,12 @@
     <a class="btn btn-primary" href="/photo/create/{{$gallery->id}}" role="button">Add Photo</a>
 </div>
 
-    <div class="container">
+    <div class="container-fluid">
        
         
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
-           
+                
            
            
             
@@ -23,6 +23,7 @@
                     </div>
                     
                 @endforeach
+               
             
            
             </div>

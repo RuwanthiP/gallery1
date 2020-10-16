@@ -1,5 +1,7 @@
 @extends('layouts.main')
 @section('content')
+
+
 <div class="callout primary">
     <div class="row column">
         <h1>Upload Photo</h1>
@@ -24,7 +26,5 @@
         <input type="hidden" name="gallery_id"  value="{{$gallery_id}}">
         {!!Form::submit('Submit',$attributes=['class'=>'button'])!!}
         {!!Form::close() !!}
-
-    </div>
-</div>
+        
 @endsection

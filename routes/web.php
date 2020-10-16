@@ -25,6 +25,11 @@ Route::get('/photo/create/{id}', 'PhotoController@create');
 
 Route::get('/photo/details/{id}', 'PhotoController@details');
 
+Route::get('/gallery/don', function()
+{
+    return view('don');
+});
+
 
 
 

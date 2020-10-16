@@ -18,6 +18,7 @@
         {!!Form::file('coverimage')!!}
         {!!Form::submit('Submit',$attributes=['class'=>'button'])!!}
         {!!Form::close() !!}
+        
 
     </div>
 </div>
